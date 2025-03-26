@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,10 @@
   <title>PreviewBikecraft</title>
 </head>
 <body>
-  <img src="uploads/imgs/bikcraft.svg" alt="bikeCraft-logo" class="logo">
   <header>
-    <nav>
+    <img src="uploads/imgs/bikcraft.svg" alt="bikeCraft-logo" class="logo">
+
+    <nav aria-label="primária">
       <ul>
         <li><a href="#" class="link-white">SOBRE</a></li>
         <li><a href="#" class="link-white">PRODUTOS</a></li>
@@ -21,36 +22,35 @@
 
   <main class="hero">
    
-    <div class="colum1">
-      <span></span>
-      <h1>Bicicletas Feitas a Mão</h1>
+    <section class="colum1" aria-labelledby="label-introdução">
+      <h1 id="label-introdução">Bicicletas Feitas a Mão</h1>
       <p>A Nimbus Stark é a melhor Bikecraft já criada pea nossa equipe. Ela vem equipada com os melhores acessóris da marca.</p>
       <a href="#" class="vermelho">VER MAIS</a>
-    </div>
+    </section>
     <img src="uploads/imgs/bicicleta.jpg" alt="bike-black">
-    <h2>Vantagens BikeCraft</h2>
+    <h2 id="label-vantagens">Vantagens BikeCraft</h2>
 
-    <div class="colum2">
+    <ul class="colum2" aria-labelledby="label-vantagens">
 
-      <div class="sub-colum">
+      <li class="sub-colum">
         <img src="uploads/imgs/eletrica.svg" alt="">
         <h3>Motor Elétrico</h3>
         <p>Permite você viajar distâncias inimaginaveis com sua bike.</p>
-      </div>
+      </li>
 
-      <div class="sub-colum">
+      <li class="sub-colum">
         <img src="uploads/imgs/velocidade.svg" alt="">
         <h3>40 km/h</h3>
         <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-      </div>
+      </li>
 
-      <div class="sub-colum">
+      <li class="sub-colum">
         <img src="uploads/imgs/rastreador.svg" alt="">
         <h3>40 km/h</h3>
         <p>Rastreado e sistema ant-furto para garantir o seu sossego.</p>
-      </div>
+      </li>
      
-    </div>
+    </ul>
   </main>
 
   <footer>Bikecraft alguns direitos reservados © </footer>

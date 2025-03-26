@@ -25,6 +25,12 @@ h2{
   text-align: right;
   padding: 2rem;
   align-self: center;
+  background-image: url("/uploads/imgs/onda.svg") ;
+}
+header{
+  display: grid;
+  justify-items: center;
+  gap: 6rem;
 }
 p{
   font-size: 2rem;
@@ -41,6 +47,7 @@ body{
 
 a{
   text-decoration: none;
+  display: block;
 }
 
 li{
@@ -52,6 +59,9 @@ ul{
   flex-wrap: wrap;
   justify-content: center;
 }
+.link-white:hover{
+  border: solid 2px var(--vermelho);
+}
 
 .link-white{
   padding: 1.5rem 3rem;
@@ -60,6 +70,7 @@ ul{
   border-radius: 4px;
   cursor: pointer;
   font-size: 2rem;
+  border:2px solid white;
 }
 
 .logo{
@@ -69,14 +80,14 @@ ul{
 .hero{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: stretch;
   max-width: 100rem;
 
   /* padding: 4rem; */
 }
 
 .colum1{
-  padding:  2rem;
+  padding: 2rem;
   text-align: right;
   display: grid;
   position: relative;
@@ -84,7 +95,7 @@ ul{
   gap: 2rem;
   justify-items: end;
   background-color: #fff;
-
+  min-height: 100%; /* Garante que tenha a altura completa */
 
 }
 
@@ -101,16 +112,24 @@ ul{
 .sub-colum p{
   grid-column: 2;
 }
+
+.sub-colum:hover {
+  border-left: 4px solid var(--vermelho);
+  padding-left: 10px; /* Opcional, para dar um espacinho entre o texto e a borda */
+  cursor: pointer;
+}
+
 h3{
   font-size: 2rem;
 }
-span{
+h1::after{
+  content: "";
   width: 6rem;
   height: 4px;
   background-color: var(--vermelho);
   position: absolute;
   right: -30px;
-  top: -50px;
+  top: 20px;
 }
 .vermelho{
   padding: 1.5rem 3rem;
@@ -120,6 +139,9 @@ span{
   cursor: pointer;
   font-size: 2rem;
 }
+.vermelho:hover{
+  background-color: #271b1a;
+}
 
 footer{
   background-color: white;
@@ -127,4 +149,8 @@ footer{
   text-align: center;
   padding: 4rem;
   font-size: 2rem;
+}
+
+h1{
+  font-size: 3rem;
 }
